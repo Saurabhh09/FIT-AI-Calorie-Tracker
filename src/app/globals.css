@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@import "../../styles.css";
+@import "./auth-routes.css";
+
+/* New app-only additions are deliberately small so the prototype's design system remains the source of truth. */
+.setup-notice {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border: 1px solid #eadfce;
+  border-radius: 14px;
+  background: #fffaf3;
+  color: #6b5540;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.workspace-shell {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: clamp(24px, 6vw, 72px);
+  background: #f8f7fb;
+}
+.workspace-card {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+.workspace-card h1 {
+  margin: 26px 0 10px;
+  font-size: clamp(30px, 5vw, 42px);
+  line-height: 1.06;
+  letter-spacing: -.05em;
+}
+.workspace-card p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+.workspace-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: #615d66;
+  font-size: 12px;
+  font-weight: 700;
+}
+.workspace-footnote {
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+}
+.auth-error {
+  margin: 0;
+  color: #a3474d;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.auth-success {
+  margin: 0;
+  color: #34724a;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.auth-visual-note {
+  display: flex;
+  min-height: 150px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,.95);
+  border-radius: 25px;
+  background: rgba(255,255,255,.74);
+  box-shadow: 0 12px 35px rgba(39,32,48,.06);
+}
+.auth-visual-note strong { font-size: 14px; }
+.auth-visual-note p { max-width: 420px; margin: 0; color: #77747c; font-size: 13px; line-height: 1.55; }
+.auth-visual-note .note-points { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+.auth-visual-note .note-points span { padding: 7px 10px; border-radius: 999px; background: var(--surface); color: #706c75; font-size: 11px; font-weight: 650; }

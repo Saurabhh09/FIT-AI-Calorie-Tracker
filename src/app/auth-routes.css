@@ -1,0 +1,17 @@
+.auth-switch a {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: transparent;
+  color: #77747c;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.auth-switch a.active {
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 2px 8px rgba(27,24,34,.08);
+}
